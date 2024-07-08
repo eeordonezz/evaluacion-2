@@ -1,0 +1,210 @@
+.root {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 3rem;
+}
+
+.list_tareas {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    align-items: center;
+}
+
+.div_tareas {
+    width: 100%;
+    height: 8rem;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 0.2rem rgba(180, 174, 174, 0.532) solid;
+    display: grid;
+    grid-template-columns: 8% 30% 2% 2%  1% 11% 11% 11%;
+    gap: 2.5rem;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px}
+.div_tareas:hover{
+
+    background-color: #acadaf46;
+
+}
+.usuario{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.texto {
+    font-size: 2rem;
+    color: rgb(69, 68, 68);
+
+}
+.categoria{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: rgb(138, 136, 136);
+}
+
+
+.estado {
+    font-size: 12px; 
+    cursor: pointer;
+    color: black;
+}
+
+.botones {
+    text-align: right;
+}
+
+.btn_mas {
+    display: inline-block;
+    
+    padding: 0.8rem 4rem;
+    background-color: #49547f;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn_mas:hover {
+    background-color: #214888;
+}
+
+.formulario {
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    width: 500px;
+    height: 20rem;
+    display: none;
+}
+
+.formulario.activar_b {
+    display: block;
+}
+
+.formulario.activar_f {
+    display: flex;
+}
+
+.formulario.activar_g {
+    display: grid;
+}
+
+.div_formulario {
+
+    width: 100%;
+    height: 25rem;
+    border-radius: 3rem;
+
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 85%;
+    max-width: 100%;
+    box-shadow: 1px 1px 10px 2px;
+}
+
+.div_formulario input[type="text"],
+.div_formulario select {
+  
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #F3EEEA; /* Color de fondo para los inputs */
+}
+
+.btn_cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.btn_ok {
+    position: absolute;
+    top: 18rem;
+    left: 7rem;
+    background-color: #5882b4;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 60%;
+    max-width: 100%;
+
+}
+.div .imagen{
+    display: none;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+
+    
+}
+.nombre_crear{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    justify-content: center;
+}
+.registro{
+    font-size: 3rem;
+    width: 100%;
+}
+.form-tarea{
+    position: absolute;
+    top: 20rem;
+    width: 15rem;
+    height: 8rem;
+    background-color: #d9d9da;
+    display: grid;
+    box-shadow: 0px 0px 10px 0px;
+}
+.nueva-tarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
